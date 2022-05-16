@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+   <body>
+      <div class="wrapper">
+         @@include('html/_header.htm',{})
+         <main class="page">
+            <div class="image">
+               <img src="@img/01.jpg" alt="">
+            </div>
+
+            <h1>TodoList</h1>
+            <div class="todo">
+
+               <form action="#" class="todo__form">
+                  <h4>Add a new task</h4>
+                  <input autocomplete="off" type="text" name="form[]" placeholder="What else needs to be done?"
+                     class="input">
+                  <button type="submit" class="button">Add!</button>
+               </form>
+
+               <ul class="todo__list">
+
+                  <li class="todo__item">
+                     <div class="todo__description">Lorem ipsum dolor sit amet </div>
+                     <div class="todo__actions">
+                        <div class="todo__date">13.05.2022</div>
+                        <div class="todo__buttons">
+                           <button class="todo__done todo__button">Done</button>
+                           <button class="todo__delete todo__button">Delete</button>
+                        </div>
+                     </div>
+
+                  </li>
+
+
+                  <li class="todo__item">
+                     <div class="todo__description">Lorem ipsum dolor sit amet </div>
+                     <div class="todo__actions">
+                        <div class="todo__date">13.05.2022</div>
+                        <div class="todo__buttons">
+                           <button class="todo__done todo__button">Done</button>
+                           <button class="todo__delete todo__button">Delete</button>
+                        </div>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
+
+
+         </main>
+         @@include('html/_footer.htm',{})
+      </div>
+      @@include('html/_popup.htm',{})
+      @@include('html/_js.htm',{})
+   </body>
+</html>
