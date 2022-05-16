@@ -31,13 +31,13 @@ export const path = {
 	buildFolder: buildFolder,
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
-	ftp: `` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
+	ftp: `/public_html/` // Путь к нужной папке на удаленном сервере. gulp добавит имя папки проекта автоматически
 };
 
 // Настройка FTP соединения
 export const configFTP = {
-	host: "", // Адрес FTP сервера
-	user: "", // Имя пользователя
-	password: "", // Пароль
-	parallel: 5 // Кол-во одновременных потоков
+	host: "o95417.hostru10.fornex.host", // Адрес FTP сервера
+	user: "o95417", // Имя пользователя
+	password: "T5*EIEUdwN^J<Th=", // Пароль
+	parallel: 10 // Кол-во одновременных потоков
 }
